@@ -1,0 +1,28 @@
+{
+  "charges_media_por_fumador": {
+    "no": 8440.66,
+    "yes": 32050.23
+  },
+  "charges_mediana_por_fumador": {
+    "no": 7345.73,
+    "yes": 34456.35
+  },
+  "charges_media_fumador_x_obeso": {
+    "smoker=no,obese=0": 7977.03,
+    "smoker=no,obese=1": 8855.53,
+    "smoker=yes,obese=0": 21363.22,
+    "smoker=yes,obese=1": 41557.99
+  },
+  "asimetria_charges": 1.515,
+  "asimetria_log_charges": -0.09,
+  "spearman_con_charges": {
+    "age": 0.534,
+    "bmi": 0.12,
+    "children": 0.132,
+    "smoker": 0.664,
+    "sex": 0.011,
+    "obese": 0.107,
+    "smoker_obese": 0.537
+  },
+  "pct_fumadores": 20.49
+}

@@ -1,0 +1,71 @@
+{
+  "filas_iniciales": 1338,
+  "esquema": {
+    "columnas_descartadas": [],
+    "valores_no_numericos": {
+      "age": 0,
+      "bmi": 0,
+      "children": 0,
+      "charges": 0
+    }
+  },
+  "texto": {
+    "valores_modificados": {
+      "sex": 0,
+      "smoker": 0,
+      "region": 0
+    }
+  },
+  "nulos": {
+    "nulos_por_columna": {
+      "age": 0,
+      "sex": 0,
+      "bmi": 0,
+      "children": 0,
+      "smoker": 0,
+      "region": 0,
+      "charges": 0
+    },
+    "filas_sin_objetivo_eliminadas": 0,
+    "imputaciones": {}
+  },
+  "duplicados": {
+    "duplicados_eliminados": 1,
+    "indices": [
+      581
+    ]
+  },
+  "reglas_negocio": {
+    "age_fuera_de_rango": 0,
+    "bmi_fuera_de_rango": 0,
+    "children_fuera_de_rango": 0,
+    "charges_fuera_de_rango": 0,
+    "sex_fuera_de_dominio": 0,
+    "smoker_fuera_de_dominio": 0,
+    "region_fuera_de_dominio": 0,
+    "filas_eliminadas": 0
+  },
+  "atipicos_iqr": {
+    "bmi": {
+      "limite_inferior": 13.675,
+      "limite_superior": 47.315,
+      "n_atipicos": 9,
+      "pct_atipicos": 0.67
+    },
+    "charges": {
+      "limite_inferior": -13120.7162,
+      "limite_superior": 34524.7776,
+      "n_atipicos": 139,
+      "pct_atipicos": 10.4,
+      "pct_fumadores_entre_atipicos": 97.84
+    }
+  },
+  "variables_derivadas": {
+    "variables_nuevas": [
+      "obese",
+      "smoker_obese"
+    ],
+    "regla": "obese = bmi >= 30.0; smoker_obese = smoker=='yes' AND obese"
+  },
+  "filas_finales": 1337
+}
